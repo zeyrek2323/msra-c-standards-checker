@@ -13,10 +13,10 @@ Bu proje, Llama3 modelini MSRA C standardı dataset'i ile LoRA (Low-Rank Adaptat
 ## 📸 Ekran Görüntüleri
 
 <p align="center">
-  <img src="images/ss1.png" width="400">
-  <img src="images/ss2.png" width="400">
-  <img src="images/ss3.png" width="400">
-  <img src="images/ss4.png" width="400">
+  <img src="images/Ekran görüntüsü 2025-08-27 093958.png" width="400">
+  <img src="images/Ekran görüntüsü 2025-08-27 094529.png" width="400">
+  <img src="images/Ekran görüntüsü 2025-08-27 094716.png" width="400">
+  <img src="images/Ekran görüntüsü 2025-08-27 094734.png" width="400">
 </p>
 
 
