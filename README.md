@@ -10,8 +10,15 @@ Bu proje, Llama3 modelini MSRA C standardı dataset'i ile LoRA (Low-Rank Adaptat
 - **Instruction Following**: Instruction-following formatında eğitim
 - **Wandb Integration**: Eğitim sürecini takip etmek için
 
-## Ekran Görüntüleri 
-![Ekran Görüntüleri](images/Ekran görüntüsü 2025-08-27 093958.png)
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="images/ss1.png" width="400">
+  <img src="images/ss2.png" width="400">
+  <img src="images/ss3.png" width="400">
+  <img src="images/ss4.png" width="400">
+</p>
+
 
 ## 📋 Gereksinimler
 
