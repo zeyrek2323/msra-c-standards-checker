@@ -10,6 +10,9 @@ Bu proje, Llama3 modelini MSRA C standardı dataset'i ile LoRA (Low-Rank Adaptat
 - **Instruction Following**: Instruction-following formatında eğitim
 - **Wandb Integration**: Eğitim sürecini takip etmek için
 
+## Ekran Görüntüleri 
+![Ekran Görüntüleri](images/Ekran görüntüsü 2025-08-27 093958.png)
+
 ## 📋 Gereksinimler
 
 - Python 3.8+
@@ -17,6 +20,8 @@ Bu proje, Llama3 modelini MSRA C standardı dataset'i ile LoRA (Low-Rank Adaptat
 - Hugging Face hesabı ve Llama3 model erişimi
 
 ## 🛠️ Kurulum
+
+
 
 1. **Repository'yi klonlayın:**
 ```bash
