@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSRA C Standard Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🔍 MSRA C Standard Checker</h1>
+            <p>Fine-tuned Llama3 model ile C kodunuzu MSRA standardına uygunluğunu kontrol edin</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <div class="input-section">
+                <label for="codeInput" class="input-label">C Kodunuzu Girin:</label>
+                <div class="code-input-container">
+                    <textarea 
+                        id="codeInput" 
+                        class="code-input" 
+                        placeholder="// C kodunuzu buraya yazın...
+// Örnek:
+int main() {
+    int x = 5;
+    return x;
+}"
+                        rows="12"
+                    ></textarea>
+                </div>
+                <button id="checkButton" class="check-button">
+                    <span class="button-text">🔍 Kodu Kontrol Et</span>
+                    <div class="loading-spinner" style="display: none;">
+                        <div class="spinner"></div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Result Section -->
+            <div id="resultSection" class="result-section" style="display: none;">
+                <h3>📋 Kontrol Sonucu</h3>
+                <div id="resultContent" class="result-content">
+                    <!-- Result will be displayed here -->
+                </div>
+            </div>
+
+            <!-- Example Section -->
+            <div class="example-section">
+                <h3>💡 Örnek Kodlar</h3>
+                <div class="example-grid">
+                    <div class="example-card" onclick="loadExample('buffer-overflow')">
+                        <h4>Buffer Overflow</h4>
+                        <p>char str[10]; strcpy(str, "very long string");</p>
+                    </div>
+                    <div class="example-card" onclick="loadExample('double-free')">
+                        <h4>Double Free</h4>
+                        <p>int* ptr = malloc(100); free(ptr); free(ptr);</p>
+                    </div>
+                    <div class="example-card" onclick="loadExample('assignment-condition')">
+                        <h4>Assignment in Condition</h4>
+                        <p>if (x = 10) { printf("x is 10"); }</p>
+                    </div>
+                    <div class="example-card" onclick="loadExample('valid-code')">
+                        <h4>Geçerli Kod</h4>
+                        <p>int add(int a, int b) { return a + b; }</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by Fine-tuned Llama3 LoRA Model</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
